@@ -48,28 +48,33 @@ button{
     font-size: 18px;
 }
 
-header{
+header {
     height: calc(100vh - var(--menu-height));
     display: flex;
     align-items: center;
 }
 
-div.container{
+header .container img {
+    display: none;
+}
+
+header .container {
     width: 50%;
     padding: 0 100px;
     height: fit-content;
 }
 
-div.container h1{
+header .container h1 {
     color: var(--rose);
 
 }
 
-div.container button{
+header .container button {
     margin-top: 40px;
 }
-nav{
-    display:flex;
+
+nav {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     height: var(--menu-height);
@@ -83,13 +88,80 @@ nav img{
     height: 45px;
 }
 
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a{
     font-size: 24px;
     color: var(--rose);
     text-decoration: none;
-    padding: 0 35px;
+    margin: 0 35px;
+}
+
+nav ul a svg{
+    display: none;
 }
 
 section{
     height: 1500px;
+}
+
+/*RESPONSIVIDADE*/
+/* small desktops */
+
+@media (max-width: 100px){
+
+    header .container {
+        width: 100%;
+    }
+    nav ul a{
+        font-size: 18px;
+    }
+
+    nav{
+        padding: 0 30px;
+    }
+}
+
+/* Tablet*/
+@media (max-width: 767px){
+    
+    header .container img{
+        display: inline;
+        margin-bottom: 70px;
+    }
+
+    nav image{
+        display: none;
+    }
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul a{
+        font-size: 16px;
+    }
+
+}
+
+/* Celular*/
+@media (max-width: 480px){
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav{
+        padding: 0 15px;
+    }
+    
+    nav ul a{
+        font-size: 12px;
+    }
+    nav ul a svg{
+        display: block;
+        margin:  0 auto 10px;
+    }
 }
