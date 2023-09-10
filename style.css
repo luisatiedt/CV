@@ -48,6 +48,14 @@ button{
     font-size: 18px;
 }
 
+.title-pink{
+    color: var(--pink);
+}
+
+.title-rose{
+    color: var(--rose);
+}
+
 header {
     height: calc(100vh - var(--menu-height));
     display: flex;
@@ -105,9 +113,26 @@ nav ul a svg{
     display: none;
 }
 
-section{
-    height: 1500px;
+.about-me{
+display: flex;
+padding: 100px;
+
 }
+
+.about-me .container{
+    width: 50%;
+    padding-right: 50px
+}
+
+.about-me .img-container{
+    width: 50%;
+    text-align: center;
+}
+
+.about-me .img-container img{
+    width: 70%;
+}
+
 
 /*RESPONSIVIDADE*/
 /* small desktops */
