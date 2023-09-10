@@ -153,6 +153,42 @@ transform: rotate(-3.3deg);
 color: var(--rose);
 }
 
+.services {
+    text-align: center;
+    margin: 150px 0;
+    padding: 0 100px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.services .services-container .service-card {
+    max-width: 360px;
+    border: 1px solid var(--pink);
+    border-radius: 16px;
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services .services-container .service-card img {
+    margin-bottom: 40px;
+    width: 90px;
+}
+
+.service-card + .service-card {
+    margin-left: 10px;
+}
+
+
 /*RESPONSIVIDADE*/
 /* small desktops */
 
@@ -184,6 +220,25 @@ color: var(--rose);
     .about-me.img-container{
         margin: 70px 0;
     }
+
+    .services {
+        padding: 0;
+    }
+
+    .services .services-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        height: 394px;
+    }
+
+    .service-card + .service-card {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
 
 
@@ -205,7 +260,13 @@ color: var(--rose);
     nav ul a{
         font-size: 16px;
     }
+    .services {
+        margin: 70px 0;
+    }
 
+    .services .services-container {
+        padding: 0 20px;
+    }
 }
 
 /* Celular*/
