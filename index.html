@@ -23,14 +23,13 @@
 <nav>
     <img src="Assets/logo.png" alt="logo">
     <ul>
-        <a href=""><i data-feather="user"></i>Sobre mim</a>
-        <a href=""><i data-feather="briefcase"></i>Serviços</a>
-        <a href=""><i data-feather="image"></i>Portfólio</a>
-        <a href=""><i data-feather="list"></i>Currículo</a>
-        <a href=""><i data-feather="send"></i>Contato</a>
+        <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
     </ul>
 </nav>
-<section class="about-me">
+<section id="aboutme" class="about-me">
     <div class="container">
 <h1 class="title-rose">Sobre mim</h1>
 <p> I'm brazilian, living in Blumenau - Santa Catarina, graduate in Business Managment in 2019. In 2016 I got a intership program (Support area) at Philips, and that was my first touch with technology.
@@ -45,7 +44,7 @@ Currently I'm working as a customer success manager at Hi Platform. </p>
     </div>
 </section>
 
-<section class="services">
+<section id="services" class="services">
     <h1 class="title-rose">Serviços</h1>
     <div class="services-container">
         <div class="service-card">
@@ -65,7 +64,7 @@ Currently I'm working as a customer success manager at Hi Platform. </p>
         </div>
     </div>
 </section>
-<section class="curriculum">
+<section id="curriculum" class="curriculum">
 <h1 class="title-rose">Currículo</h1>
 <div class="container">
     <img class="curriculum-img" src="Assets/imagem (1).png">
@@ -88,7 +87,7 @@ Currently I'm working as a customer success manager at Hi Platform. </p>
 
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
 <h1>Send me a message</h1>
 <p>Se você gostou, entre em contato comigo</p>
 <button onclick="window.open ('https://wa.me/5547999041297')"> Entre em contato</button>
@@ -101,13 +100,10 @@ Currently I'm working as a customer success manager at Hi Platform. </p>
 </section>
 
 <footer>
-    <p> Made by Luisa Tiedt - 2023</p>
+    <p> Developed by Luisa Tiedt - 2023</p>
 </footer>
 
-
-    
-
-<script>
+ <script>
     feather.replace()
   </script>
 </body>
