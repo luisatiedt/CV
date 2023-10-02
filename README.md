@@ -8,7 +8,7 @@ HTML and CSS were the technologies that I used.
 Check out the final project here [click here](https://luisatiedt.github.io/CV/) :)
 
 ### Aprendizados/ Learnings
-* HTML: tags
-* CSS: flexbox, grid, responsiveness, classes
+* HTML: tags, images and icons input.
+* CSS: flexbox, grid, responsiveness, classes.
 
 
